@@ -19,7 +19,7 @@
                 "height": 80
               },
               "position": {
-                "x": 60,
+                "x": 100,
                 "y": 110
               },
               "angle": 0,
@@ -31,7 +31,7 @@
                   "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "actor 0"
+                  "text": "Genuine User"
                 },
                 ".element-text": {
                   "class": "element-text hasNoOpenThreats isInScope"
@@ -52,12 +52,13 @@
               "id": "2d603c9a-8254-4c97-91b3-9f39d7b715b7",
               "z": 2,
               "hasOpenThreats": false,
+              "privilegeLevel": "",
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "process 1"
+                  "text": "Web Server\nwith\nHTTPS(Asset)"
                 },
                 ".element-text": {
                   "class": "element-text hasNoOpenThreats isInScope"
@@ -77,16 +78,26 @@
               "angle": 0,
               "id": "983f7705-ecc3-4370-96ff-39b31d700793",
               "z": 3,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "ruleId": "b2a6d40d-d3f8-4750-8e4d-c02cc84b13dc",
+                  "title": "Distributed Denial of service threat",
+                  "type": "Denial of service",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "Distributed Denial of service threat that can bring down the webserver and cause the service outage."
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "actor 2"
+                  "text": "Non-valid user Or Slave\nmachine behaving as\nattacker"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -109,7 +120,7 @@
                   },
                   "attrs": {
                     "text": {
-                      "text": "flow 3",
+                      "text": "request",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -118,6 +129,9 @@
               ],
               "z": 4,
               "hasOpenThreats": false,
+              "isPublicNetwork": true,
+              "isEncrypted": true,
+              "protocol": "HTTPS",
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -140,16 +154,26 @@
               "angle": 0,
               "id": "f1eb51fe-ffc1-4b82-83df-477264fe373b",
               "z": 5,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "ruleId": "b2a6d40d-d3f8-4750-8e4d-c02cc84b13dc",
+                  "title": "Distributed Denial of service threat",
+                  "type": "Denial of service",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "Distributed Denial of service threat that can bring down the service and hampre the service"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "actor 4"
+                  "text": "Non-valid user Or Slave\nmachine behaving as\nattacker"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -166,16 +190,26 @@
               "angle": 0,
               "id": "4705b5c9-a986-41e2-aee9-a27c4a42c960",
               "z": 6,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "ruleId": "b2a6d40d-d3f8-4750-8e4d-c02cc84b13dc",
+                  "title": "Distributed Denial of service threat",
+                  "type": "Denial of service",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "Distributed Denial of service threat that can bring down the service and cause the outage."
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "actor 5"
+                  "text": "Non-valid user Or Slave\nmachine behaving as\nattacker"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -198,7 +232,7 @@
                   "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "actor 6"
+                  "text": "Bot Network Controller\nfor distributed attack"
                 },
                 ".element-text": {
                   "class": "element-text hasNoOpenThreats isInScope"
@@ -220,6 +254,10 @@
                 {
                   "x": 220,
                   "y": 660
+                },
+                {
+                  "x": 200,
+                  "y": 560
                 }
               ],
               "id": "0c971eb1-05d9-4223-8b2a-0b6992cdcfaa",
@@ -228,7 +266,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 7",
+                      "text": "Instructions to run",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -237,6 +275,7 @@
               ],
               "z": 8,
               "hasOpenThreats": false,
+              "isPublicNetwork": true,
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -263,7 +302,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 8",
+                      "text": "Instructions to run",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -272,6 +311,343 @@
               ],
               "z": 9,
               "hasOpenThreats": false,
+              "isPublicNetwork": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "x": 310,
+                "y": 740
+              },
+              "target": {
+                "x": 620,
+                "y": 560
+              },
+              "vertices": [],
+              "id": "ce98acba-743c-4874-9790-bad10807d46c",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Instructions to run",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 10,
+              "hasOpenThreats": false,
+              "isPublicNetwork": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "x": 200,
+                "y": 350
+              },
+              "target": {
+                "x": 540,
+                "y": 220
+              },
+              "vertices": [],
+              "id": "b14dcc74-297a-45e0-9f5d-448464d85346",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "DDoS attack",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 11,
+              "hasOpenThreats": false,
+              "isPublicNetwork": true,
+              "isEncrypted": true,
+              "protocol": "HTTPS",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "x": 400,
+                "y": 500
+              },
+              "target": {
+                "x": 580,
+                "y": 240
+              },
+              "vertices": [],
+              "id": "919843a0-01a1-48ed-8137-363ea72a3501",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "DDoS attack",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 12,
+              "hasOpenThreats": false,
+              "isPublicNetwork": true,
+              "isEncrypted": true,
+              "protocol": "HTTPS",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "x": 690,
+                "y": 500
+              },
+              "target": {
+                "x": 620,
+                "y": 230
+              },
+              "vertices": [],
+              "id": "b5d96d66-2606-418f-817d-2579881fdf2c",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "DDoS attack",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 13,
+              "hasOpenThreats": false,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "protocol": "HTTPS",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 280,
+                "y": 40
+              },
+              "angle": 0,
+              "id": "f57bf1ac-b2f3-4802-af1c-28d632555949",
+              "z": 14,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Genuine User"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "f57bf1ac-b2f3-4802-af1c-28d632555949"
+              },
+              "target": {
+                "x": 550,
+                "y": 150
+              },
+              "vertices": [],
+              "id": "0871f1f4-3672-4543-8946-6d50123e7f5e",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "request",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 15,
+              "hasOpenThreats": false,
+              "protocol": "HTTPS",
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 1050,
+                "y": 210
+              },
+              "target": {
+                "x": 1060,
+                "y": 210
+              },
+              "vertices": [
+                {
+                  "x": 990,
+                  "y": 100
+                },
+                {
+                  "x": 680,
+                  "y": 89
+                },
+                {
+                  "x": 530,
+                  "y": 50
+                },
+                {
+                  "x": 490,
+                  "y": 40
+                },
+                {
+                  "x": 360,
+                  "y": 28
+                },
+                {
+                  "x": 210,
+                  "y": 28
+                },
+                {
+                  "x": 170,
+                  "y": 30
+                },
+                {
+                  "x": 60,
+                  "y": 190
+                },
+                {
+                  "x": 430,
+                  "y": 260
+                }
+              ],
+              "id": "53b7bd9d-46d4-40b6-98d7-ec8fadfff825",
+              "z": 16,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 810,
+                "y": 130
+              },
+              "angle": 0,
+              "id": "0ae04f65-0651-4b73-a491-8c82265a3c38",
+              "z": 17,
+              "hasOpenThreats": false,
+              "storesCredentials": true,
+              "isEncrypted": true,
+              "isSigned": true,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Database(Asset)"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "x": 640,
+                "y": 170
+              },
+              "target": {
+                "id": "0ae04f65-0651-4b73-a491-8c82265a3c38"
+              },
+              "vertices": [],
+              "id": "98d41ca5-8032-46da-bb60-c249eb326cdd",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "access records",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 18,
+              "hasOpenThreats": false,
+              "isEncrypted": true,
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
