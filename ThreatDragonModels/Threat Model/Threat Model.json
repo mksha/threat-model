@@ -7,7 +7,7 @@
     "contributors": [],
     "diagrams": [
       {
-        "title": "Model",
+        "title": "Threat Model",
         "thumbnail": "./public/content/images/thumbnail.jpg",
         "id": 0,
         "diagramJson": {
