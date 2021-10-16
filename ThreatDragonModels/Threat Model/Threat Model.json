@@ -226,16 +226,26 @@
               "angle": 0,
               "id": "5c8263da-7b43-45cc-bd9a-2bba7be810c2",
               "z": 7,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "ruleId": "b2a6d40d-d3f8-4750-8e4d-c02cc84b13dc",
+                  "title": "Distributed Denial of service threat",
+                  "type": "Denial of service",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "Distributed Denial of service threat"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Bot Network Controller\nfor distributed attack"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -447,7 +457,20 @@
                 "x": 620,
                 "y": 230
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 650,
+                  "y": 350
+                },
+                {
+                  "x": 640,
+                  "y": 320
+                },
+                {
+                  "x": 630,
+                  "y": 280
+                }
+              ],
               "id": "b5d96d66-2606-418f-817d-2579881fdf2c",
               "labels": [
                 {
@@ -466,70 +489,6 @@
               "isEncrypted": true,
               "isPublicNetwork": true,
               "protocol": "HTTPS",
-              "attrs": {
-                ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
-                },
-                ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
-                }
-              }
-            },
-            {
-              "type": "tm.Actor",
-              "size": {
-                "width": 160,
-                "height": 80
-              },
-              "position": {
-                "x": 280,
-                "y": 40
-              },
-              "angle": 0,
-              "id": "f57bf1ac-b2f3-4802-af1c-28d632555949",
-              "z": 14,
-              "hasOpenThreats": false,
-              "attrs": {
-                ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
-                },
-                "text": {
-                  "text": "Genuine User"
-                },
-                ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
-                }
-              }
-            },
-            {
-              "type": "tm.Flow",
-              "smooth": true,
-              "source": {
-                "id": "f57bf1ac-b2f3-4802-af1c-28d632555949"
-              },
-              "target": {
-                "x": 550,
-                "y": 150
-              },
-              "vertices": [],
-              "id": "0871f1f4-3672-4543-8946-6d50123e7f5e",
-              "labels": [
-                {
-                  "position": 0.5,
-                  "attrs": {
-                    "text": {
-                      "text": "request",
-                      "font-weight": "400",
-                      "font-size": "small"
-                    }
-                  }
-                }
-              ],
-              "z": 15,
-              "hasOpenThreats": false,
-              "protocol": "HTTPS",
-              "isEncrypted": true,
-              "isPublicNetwork": true,
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -648,6 +607,70 @@
               "z": 18,
               "hasOpenThreats": false,
               "isEncrypted": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 280,
+                "y": 40
+              },
+              "angle": 0,
+              "id": "a8063fd2-f425-4dd3-9781-fccb58ba5a7a",
+              "z": 19,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Genuine User"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "x": 440,
+                "y": 80
+              },
+              "target": {
+                "x": 560,
+                "y": 140
+              },
+              "vertices": [],
+              "id": "eeadabce-eddd-4722-a36f-ba9a055df09d",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "request",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 20,
+              "hasOpenThreats": false,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
